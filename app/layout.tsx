@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "./components/header";
+import Title from "./components/title";
+import Typewriter from "./components/title";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+      {/* <header className="bg-red-300 flex">sdads</header> */}
+      <body className={inter.className}>
+        <Nav/>
+        {children}
+
+        {/* <Typewriter text='jsajdjasdj'  delay= {100} /> */}
+
+
+        </body>
     </html>
   );
 }
