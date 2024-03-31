@@ -63,7 +63,7 @@ const Proj: React.FC<{ images: string[] ; src: string , logopics: string[], text
     // const logos = ['Github.png','Mongodblogo.png','Firebaselogo.png', 'nextjs.png', 'Tailwindlogo.png','Vercel.png' ]
     return (
         <section className=' flex justify-around items-center sm:p-3 relative'>
-            <div className='floating-div p-3 grid grid-flow-row md:grid-flow-col bg-violet-300 max-w-[70em] shadow-2xl rounded-md'>
+            <div className='ring-2 ring-gray-500 floating-div p-3 grid grid-flow-row md:grid-flow-col bg-gradient-to-br from-violet-500 to-sky-700 max-w-[70em] shadow-2xl rounded-md'>
             <div className='bg-red-100 text-sm sm:text-lg relative items-center justify-center p-2'>
                     <p className='pr-8'>{text}</p>
                    {!nolink ? <p className=''>Link: <Link href={link} className="text-sky-800">{link}</Link></p> : ''  }
@@ -85,7 +85,7 @@ const Proj: React.FC<{ images: string[] ; src: string , logopics: string[], text
                 </div>
                         : ''}
 
-                    <div className='p-2'>
+                    <div className='p-2 pl-3'>
                      <button className='absolute  top-1/2 transform -translate-y-1/2 bg-gray-300 opacity-80 hover:opacity-100 hover:bg-red-300 rounded-full p-2' onClick={handlePrevImage}>
                     &lt;
                     </button>
