@@ -12,21 +12,21 @@ const Header = () => {
 
   return (
     <nav className="bg-slate-600 flex justify-between items-center p-3">
-      <div className=" items-center gap-10 hidden sm:flex p-2">
-        <Link href="/">
-          <span className="bg-pink-300 rounded-md p-2 cursor-pointer">Home</span>
+      <div className=" items-center gap-10 hidden sm:flex p-2 ml-2">
+        <Link href="/" className='hover:scale-[120%]'>
+          <span className="bg-cyan-600 rounded-md p-2 cursor-pointer">Home</span>
         </Link>
-        <Link href="/projects">
-          <span className="bg-pink-300 rounded-md p-2 cursor-pointer">Projects</span>
+        <Link href="/projects" className='hover:scale-[120%]'>
+          <span className="bg-cyan-600 rounded-md p-2 cursor-pointer">Projects</span>
         </Link>
-        <Link href="/skills">
-          <span className="bg-pink-300 rounded-md p-2 cursor-pointer">Skills</span>
+        <Link href="/skills" className='hover:scale-[120%]'>
+          <span className="bg-cyan-600 rounded-md p-2 cursor-pointer">Skills</span>
         </Link>
-        <Link href="/experience">
-          <span className="bg-pink-300 rounded-md p-2 cursor-pointer">Experience</span>
+        <Link href="/experience" className='hover:scale-[120%]'>
+          <span className="bg-cyan-600 rounded-md p-2 cursor-pointer">Experience</span>
         </Link>
-        <Link href="/connect">
-          <span className="bg-pink-300 rounded-md p-2 cursor-pointer">Connect</span>
+        <Link href="/connect" className='hover:scale-[120%]'>
+          <span className="bg-cyan-600 rounded-md p-2 cursor-pointer">Connect</span>
         </Link>
       </div>
       <div className="sm:hidden">
@@ -37,7 +37,7 @@ const Header = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="sm:hidden absolute top-16 left-0 bg-slate-600 w-[50%] p-4 z-20">
+        <div className="sm:hidden absolute top-16 left-0 bg-slate-600 w-[50%] p-4 z-20 ml-2">
           <Link href="/">
             <span className="block text-white p-2 cursor-pointer">Home</span>
           </Link>

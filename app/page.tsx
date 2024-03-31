@@ -22,18 +22,18 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col ">
+    <main className="bg-gradient-to-tr from-teal-500 to-sky-700 flex flex-col min-h-screen ">
 
-      <div className="bg-red-300 flex justify-center">
-        <div className="relative bg-green-500">
+      <div className=" flex justify-center">
+        <div className="relative ">
           <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-400 opacity-85 rounded-full p-4 hover:bg-pink-300 hover:opacity-75 hover:scale-110 transition duration-200"
+            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white opacity-60 rounded-full p-4 hover:bg-sky-300 hover:opacity-75 hover:scale-110 transition duration-200"
             onClick={prevImage}
           >
             {'<'}
           </button>
           <button
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-400 opacity-85 rounded-full p-4  hover:bg-pink-300 hover:opacity-75 hover:scale-110 transition duration-200"
+            className="absolute top-1/2 right-0 transform -translate-y-1/2  bg-white opacity-60 rounded-full p-4  hover:bg-sky-300 hover:opacity-75 hover:scale-110 transition duration-200"
             onClick={nextImage}
           >
             {'>'}

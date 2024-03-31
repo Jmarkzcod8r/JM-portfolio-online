@@ -21,7 +21,7 @@ const Typewriter = ({ text = `Hi! I'm Jay Mark Gutierrez. Full Stack Developer `
     }, [currentIndex, delay, text]);
 
     return (
-        <div>
+        <div className='opacity-100'>
             <h1
                 className="text-3xl font-bold text-center mt-8 font-serif" // Change font here
                 dangerouslySetInnerHTML={{ __html: currentText }}

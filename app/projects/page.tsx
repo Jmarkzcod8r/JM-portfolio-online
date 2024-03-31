@@ -5,12 +5,12 @@ import Proj from './proj'
 
 const page = () => {
   return (
-    <div className='bg-blue-500 min-h-screen gap-10 flex flex-col'>
-        <div className='bg-red-500 relative fex flex-col gap-10'>
+    <div className='bg-gradient-to-tr from-teal-500 to-sky-700 min-h-screen flex flex-col'>
+        <div className=' relative '>
       <Proj
        images = {['/Screenshots/Overall2.png','/Screenshots/Leche-Plan.png', '/Screenshots/Sign-in.png', '/Screenshots/Upload-Photo.png']}
        src = {'/Screenshots/Canva-Phone.png'}
-       logopics = {['Github.png','Mongodblogo.png','Firebaselogo.png', 'nextjs.png', 'Tailwindlogo.png','Vercel.png' ] }
+       logopics = {['Github.png','Mongodblogo.png','Firebaselogo.png', 'Typescript.png','nextjs.png', 'Tailwindlogo.png','Vercel.png' ] }
        text = {`This is a basic e-commerce website with authentication. You can easily upload photos whether thru phone or via website. Pictures are stored in Firebase and for data, I used MongoDB for the database. You can make stores and add products to it with details such as name, price, description, count in stock etc.`}
        link = {'https://bit.ly/4aDTZ3X'}
 

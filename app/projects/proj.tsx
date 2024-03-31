@@ -62,14 +62,14 @@ const Proj: React.FC<{ images: string[] ; src: string , logopics: string[], text
 
     // const logos = ['Github.png','Mongodblogo.png','Firebaselogo.png', 'nextjs.png', 'Tailwindlogo.png','Vercel.png' ]
     return (
-        <section className='bg-red-100  items-center p-1 sm:p-5 gap-2 relative'>
-            <div className='floating-div p-3 grid grid-flow-row md:grid-flow-col bg-slate-500'>
-            <div className='bg-green-600 text-sm sm:text-lg relative items-center justify-center p-2'>
+        <section className=' flex justify-around items-center sm:p-3 relative'>
+            <div className='floating-div p-3 grid grid-flow-row md:grid-flow-col bg-violet-300 max-w-[70em] shadow-2xl rounded-md'>
+            <div className='bg-red-100 text-sm sm:text-lg relative items-center justify-center p-2'>
                     <p className='pr-8'>{text}</p>
-                   {!nolink ? <p>Link: <Link href={link}>{link}</Link></p> : ''  }
+                   {!nolink ? <p className=''>Link: <Link href={link} className="text-sky-800">{link}</Link></p> : ''  }
                     <div className='flex flex-row justify-around py-2 mt-3'>
                     {logopics.map((logopic, index) => (
-                            <Image key={index} alt='' src={`/Logos/${logopic}`} width={ 20} height={20} className="sm:w-[2em] sm:h-[2em]" />
+                            <Image title={`${logopic}`} key={index} alt=''  src={`/Logos/${logopic}`} width={ 20} height={20} className="sm:w-[2em] sm:h-[2em]" />
                         ))}
 
                     </div>
@@ -85,16 +85,16 @@ const Proj: React.FC<{ images: string[] ; src: string , logopics: string[], text
                 </div>
                         : ''}
 
-                    <div >
-                     <button className='absolute  top-1/2 transform -translate-y-1/2 bg-gray-500 rounded-full p-2' onClick={handlePrevImage}>
+                    <div className='p-2'>
+                     <button className='absolute  top-1/2 transform -translate-y-1/2 bg-gray-300 opacity-80 hover:opacity-100 hover:bg-red-300 rounded-full p-2' onClick={handlePrevImage}>
                     &lt;
                     </button>
-                    <div className='bg-violet-400 flex items-center justify-center p-2'>
+                    <div className='bg-purple-300 rounded-md flex items-center justify-center p-2'>
 
 
                         <Image src={images[currentImageIndex]} width={200} height={200} alt='' />
                     </div>
-                    <button className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 rounded-full p-2' onClick={handleNextImage}>
+                    <button className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 opacity-80 hover:opacity-100 hover:bg-red-300 rounded-full p-2' onClick={handleNextImage}>
                     &gt;
                     </button>
                     </div>
