@@ -35,6 +35,18 @@ const page = () => {
        link = {'https://www.devjourn.com'}
       />
       </div>
+
+      <div className=' relative'>
+       <Proj
+       images = {['/Screenshots/JMlinen-web2.png','/Screenshots/web-JMlinen2.png']}
+       src = {'/Screenshots/phone-JMlinen.png'}
+       logopics = {['Github.png','Mongodblogo.png', 'nextjs.png', 'Tailwindlogo.png','Vercel.png' ] }
+       text = {`This web app is meant for those in the clothing industry. More often, someone wants to send the dimensions of T-shirt he wants ot be made to a certain tailoring store
+                and this tool can help easily send those information. A link is provided for the client as a means to share his newly set shirt design. A search functionality is also available to
+                  easily retrieve the entry from the database.     `}
+       link = {'https://jmlinen-tau.vercel.app/'}
+      />
+      </div>
       <div className=' relative'>
        <Proj
        images = {['/Screenshots/Django-web.png']}
