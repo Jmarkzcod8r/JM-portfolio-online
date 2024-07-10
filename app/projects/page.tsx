@@ -12,7 +12,8 @@ const page = () => {
        src = {'/Screenshots/Canva-Phone.png'}
        logopics = {['Github.png','Mongodblogo.png','Firebaselogo.png', 'Typescript.png','nextjs.png', 'Tailwindlogo.png','Vercel.png' ] }
        text = {`This is a basic e-commerce website with authentication. You can easily upload photos whether thru phone or via website. Pictures are stored in Firebase and for data, I used MongoDB for the database. You can make stores and add products to it with details such as name, price, description, count in stock etc.`}
-       link = {'https://bit.ly/4aDTZ3X'}
+      //  link = {'https://bit.ly/4aDTZ3X'}
+      link = {'https://next-amazona-basic.vercel.app/'}
 
       />
       </div>
